@@ -1,0 +1,3 @@
+## call duckdb with a duck prompt 
+## 
+duckdb -init prompt.sql

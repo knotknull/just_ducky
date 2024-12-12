@@ -1,0 +1,8 @@
+*.pdf
+*.xls
+*.ddb
+*.parquet
+*/*.xls
+*/*.ddb
+*/*.parquet
+*/*.pdf

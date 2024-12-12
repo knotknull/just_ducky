@@ -1,0 +1,16 @@
+# copy in memory table to csv and parquet outputs 
+# 
+COPY ./data/netflix_top10.csv TO 'path/to/your/output/file.csv' WITH (FORMAT 'CSV', DELIMITER ',');
+COPY ./data/netflix_top10.csv TO 'path/to/your/output/file.parquet' WITH (FORMAT 'PARQUET');
+
+
+# copy in memory table to csv and parquet outputs 
+# Acutal Data
+# 
+copy netflix_top10 TO './data_out/nftop10.csv' WITH (FORMAT 'CSV', DELIMITER ',');
+copy netflix_top10 TO './data_out/nftop10.parquet' WITH (FORMAT 'PARQUET');
+
+# read from parquet file
+SELECT * FROM read_parquet('path/to/your/file.parquet');
+
+
